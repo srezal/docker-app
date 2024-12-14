@@ -14,6 +14,7 @@ services:
 
   app:
     image: docker-app
+    build: .
     environment:
       POSTGRES_HOST: ${POSTGRES_HOST}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
